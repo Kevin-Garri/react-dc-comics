@@ -5,21 +5,187 @@
 }
 
 body {
-  min-height: 100vh;
-  font-family: "Roboto"
+  font-family: "Roboto", serif;
 }
 
-ul {
-  list-style: none;
+img {
+  width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button {
+  color: white;
+  border: 2px solid rgb(1, 130, 249);
+  background-color: transparent;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  border: 2px solid white;
+  color: rgb(1, 130, 249);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 
 /***HEADER***/
+
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+figure {
+  width: 80px;
+}
+
+figure img {
+  width: 100%;
+}
+
+nav ul {
   display: flex;
 }
 
+nav ul li {
+  list-style: none;
+  padding: 0px 15px;
+}
 
+nav ul li a {
+  padding: 46px 0px;
+}
+
+nav ul li a:hover {
+  border-bottom: 4px solid rgb(1, 130, 249);
+  color: rgb(1, 130, 249);
+}
+
+nav ul li a:active {
+  border-bottom: 4px solid rgb(1, 130, 249);
+}
 
 /***MAIN***/
+section.content {
+  background-color: black;
+  padding: 50px 0px;
+}
 
-/***FOOTER***/
+.content span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+section.dc_info {
+  background-color: rgb(1, 130, 249);
+  padding: 40px 0px;
+}
+
+div.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.column {
+  display: flex;
+  align-items: center;
+}
+
+div.column img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+div.column p {
+  color: white;
+}
+
+/***Footer***/
+section.footer_section {
+  background-image: url('../public/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer_container div img {
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: -50px;
+}
+
+div.footer_list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.footer_list div {
+  margin-right: 35px;
+}
+
+div.second_list_footer {
+  margin-top: 20px;
+}
+
+.footer_list span {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer_list ul {
+  list-style: none;
+}
+
+.footer_list ul li a {
+  color: rgb(170, 170, 170);
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.footer_list ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+section.footer_contacts {
+  background-color: rgb(48, 48, 48);
+}
+
+.footer_contacts div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+div.follow_info span {
+  color: rgb(1, 130, 249);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+div.follow_info ul {
+  display: flex;
+}
+
+div.follow_info ul li {
+  list-style: none;
+  margin-left: 20px;
+}

@@ -2,10 +2,10 @@
 
 const Header = () => {
   return (
-    <header>
-      <div>
+    <header className="container">
+      <figure>
         <img src="/img/dc-logo.png" alt="Logo" />
-      </div>
+      </figure>
       <nav>
         <ul>
           <li><a href="#">CHARACTERS</a></li>
@@ -20,7 +20,6 @@ const Header = () => {
           <li><a href="#">SHOP</a></li>
         </ul>
       </nav>
-
     </header>
   )
 }
