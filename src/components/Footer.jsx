@@ -33,27 +33,21 @@ const Footer = (props) => {
             <div>
               <span>DC</span>
               <ul>
-                <li><a href="#">Therms Of Use</a></li>
-                <li><a href="#">Privacy policy (New)</a></li>
-                <li><a href="#">Ad Choices</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Subscriptions</a></li>
-                <li><a href="#">Talent Workshops</a></li>
-                <li><a href="#">CPSC Certificates</a></li>
-                <li><a href="#">Ratings</a></li>
-                <li><a href="#">Shop Help</a></li>
-                <li><a href="#">Contact Us</a></li>
+                {footerDC.map((footerDc) => (
+                  <li key={footerDc.id}>
+                    <a href={footerDc.url}>{footerDc.name}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
               <span>SITES</span>
               <ul>
-                <li><a href="#">DC</a></li>
-                <li><a href="#">MAD Magazine</a></li>
-                <li><a href="#">DC Kids</a></li>
-                <li><a href="#">DC Universe</a></li>
-                <li><a href="#">DC Power Visa</a></li>
+                {footerSites.map((footerSites) => (
+                  <li key={footerSites.id}>
+                    <a href={footerSites.url}>{footerSites.name}</a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
