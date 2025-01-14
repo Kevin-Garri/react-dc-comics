@@ -1,6 +1,8 @@
 
 
-const Footer = () => {
+const Footer = (props) => {
+  //array creati su appjsx
+  const { footerShop, footerDC, footerSites, footerComics } = props;
   return (
     <footer>
       <section className="footer_section">
@@ -10,20 +12,21 @@ const Footer = () => {
               <div>
                 <span>DC COMICS</span>
                 <ul>
-                  <li><a href="#">Characters</a></li>
-                  <li><a href="#">Comics</a></li>
-                  <li><a href="#">Movies</a></li>
-                  <li><a href="#">TV</a></li>
-                  <li><a href="#">Games</a></li>
-                  <li><a href="#">Videos</a></li>
-                  <li><a href="#">News</a></li>
+                  {footerComics.map((link) => (
+                    <li key={link.id}>
+                      <a href={link.url}>{link.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="second_list_footer">
                 <span>SHOP</span>
                 <ul>
-                  <li><a href="#">Shop DC</a></li>
-                  <li><a href="#">Shop DC Collectibles</a></li>
+                  {footerShop.map((footerShop) => (
+                    <li key={footerShop.id}>
+                      <a href={footerShop.url}>{footerShop.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
