@@ -1,11 +1,29 @@
-
+//import array
+import comics from "../data/comics.js";
+//import card
+import SeriesCard from "./comics/comicsCard.jsx";
 
 const Main = () => {
   return (
     <main>
+      <section className="jumbotron">
+        <img src="/img/jumbotron.jpg" alt="" />
+      </section>
       <section className="content">
-        <div className="container">
-          <span>Content goes here</span>
+        <div className="container content_container">
+          <div className="content_title">
+            <h3>CURRENT SERIES</h3>
+          </div>
+          <div className="content_cards">
+            <div className="cards_row">
+
+              {comics.map(card => (
+                <SeriesCard key={card.id} cardData={card} />
+              ))}
+
+            </div>
+          </div>
+          <button className="button-blue">LOAD MORE</button>
         </div>
       </section>
       <section className="dc_info">
@@ -36,4 +54,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Main;

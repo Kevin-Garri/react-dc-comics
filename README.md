@@ -9,3 +9,6 @@ Continuate a lavorare nella stessa repo di ieri, creando un array di link nell�
 Bonus
 Creare un array di dati anche per i link nel footer e cercare di dinamicizzare anche quelli all’interno dei componenti della vostra app.
 NB: In allegato sono presenti i dati relativi al menu dell’header. Per il footer (bonus) generate voi la struttura dati in modo coerente con array di oggetti
+=========================================================================================
+Continuate a lavorare nella stessa repo di ieri e create un nuovo componente riutilizzabile per visualizzare le card dei fumetti, sfruttando l’array di oggetti in allegato. Fate in modo che il componente .
+Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli col CSS.
