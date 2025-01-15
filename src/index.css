@@ -76,15 +76,89 @@ nav ul li a:active {
 }
 
 /***MAIN***/
+
+/*jumbo*/
+section.jumbotron {
+  overflow: hidden;
+  max-height: 410px;
+}
+
+/*section-content*/
+
 section.content {
-  background-color: black;
+  background-color: rgb(28, 28, 28);
+}
+
+.content_container {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.content_title {
+  text-align: center;
+  position: absolute;
+  width: 225px;
+  top: -24px;
+
+  h3 {
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgb(2, 130, 249);
+    padding: 10px 0px;
+  }
+}
+
+/***cards-section***/
+.content_cards {
   padding: 50px 0px;
 }
 
-.content span {
-  color: white;
-  font-size: 1.5rem;
+.cards_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.card {
+  width: calc(100% / 6);
+  margin-bottom: 25px;
+  padding: 10px;
+
+  .card_img {
+    overflow: hidden;
+    width: 210px;
+    height: 210px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card_title {
+    text-transform: uppercase;
+    text-align: left;
+    width: 210px;
+    margin-top: 20px;
+    color: white;
+  }
+}
+
+.button-blue {
+  cursor: pointer;
+  background-color: rgb(2, 130, 249);
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  font-weight: 600;
+}
+
+.button-blue:hover {
+  background-color: rgb(42, 184, 159);
+}
+
+/*INFO*/
 
 section.dc_info {
   background-color: rgb(1, 130, 249);
